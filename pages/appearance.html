@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+
+<title>Блок БУ-36 с.2</title>
+
+<style>
+* {box-sizing: border-box;}
+body {
+  margin: 0;
+  background: white;
+}
+header {
+  background: #8CA5BA;
+  text-align: center;
+}
+header a {
+  display: block;
+  text-decoration: none;
+  outline: none;  
+  transition: .3s ease-in-out;
+}
+.logo {
+  color: #132C40;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  padding: 20px 0;
+}
+nav {
+  display: table;
+  margin: 0 auto;
+  
+}
+nav ul {
+  list-style: none;
+  margin: 0; 
+}
+
+.topmenu:after {
+
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #132C40;
+  padding: 15px 30px;
+}
+
+.topmenu li a:hover {color: white;}
+.submenu-link:after {
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #B0C4DE;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin :0 0;
+  transition: .5s ease-in-out;
+
+}
+.submenu a {
+  color: black;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a {border-bottom: none;}
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo">Проверка блока БУ-36 с.2</a>
+  <nav>
+    <ul class="topmenu">
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="checks.html" class="submenu-link" style="color: white;">Проверки</a>
+        <ul class="submenu">
+          <li><a href="appearance.html">Проверка внешнего вида</a></li>
+          <li><a href="first.html">Первое включение</a></li>
+          <li><a href="climate.html">Проведение климатических испытаний</a></li>
+		  <li><a href="product.html">Проверка в составе изделия</a></li>
+        </ul>
+		<li><a href="study.html" class="submenu-link">Исследование</a>
+		<ul class="submenu">
+          <li><a href="study_1.html">Проверка внешнего вида</a></li>
+          <li><a href="study_2.html">Первое включение</a></li>
+          <li><a href="study_3.html">Проведение климатических испытаний</a></li>
+		  <li><a href="study_4.html">Проверка в составе изделия</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </nav>
+
+</header>
+
+<script>
+
+$(".five li ul").hide();
+$(".five li:has('.submenu')").hover(
+  function(){
+  $(".five li ul").stop().fadeToggle(300);}
+);
+
+</script>
+</body>
+<body>
+<h2 style="font-family: 'Open Sans', sans-serif;">ПРОВЕРКА ВНЕШНЕГО ВИДА</h2>
+<table align="center" cellpadding="10" style="width: 95%;font-size: 1.4em; background: #B0C4DE; font-family: 'Open Sans', sans-serif;">
+  
+                <tr style="font-weight:bold; background: #B0C4DE; ">
+				    <td >№</td>
+                    <td style="width:40%;">Действия</td>
+                    <td >Инструменты/средства</td>
+					<td style="width:30%;">Технические требования</td>
+                </tr>
+                <tr align="justify" style=" background: white;">
+				    <td>1</td>
+                    <td>Осмотреть на наличие трещин, забоин, царапин, вмятин, вздутий, следов коррозий и других дефектов, снижающих качество и ухудшающих внешний вид.</td>
+                   <td>Антистатический браслет (1Мом±20%) или перчатки.  </td>
+					<td valign="top" rowspan="2">Внешний вид и электрический монтаж блока должны соответствовать сборочному чертежу, а также контрольному образцу или фотоэталону.</td>
+				<tr align="justify" style=" background: white;">
+					<td>2</td>
+                    <td>Провести проверку на соответствие схемам.</td>
+                    <td>6Д2.222.091 ЭЗ; 6Д2.222.091 СБ.</td>
+                </tr>
+                </tr>
+            </table>
+
+<p align="center"  style="font-size: 1.5em; font-family: 'Open Sans', sans-serif; ">
+По результатам проверки нажмите на соответствующую кнопку</p>
+ <head>
+  <style>
+   .btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #B0C4DE; /* Серый цвет фона */
+    color: #000000; /* Белый цвет текста */
+    padding: 1rem 1.7rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+   }  
+ </style>
+ </head>
+  <body align="center"> 
+  <a href="first.html" class="btn">Внешний вид и электрический монтаж блока соответствует требованиям</a>
+ </body>
+ 
+<h2></h2>
+  <body align="center"> 
+  <a href="study_1.html" class="btn">Внешний вид и электрический монтаж блока НЕ соответствует требованиям</a>
+  <h1 style="padding: 0 10px 10%;"></h1>
+ </body>
+ <body>
+<style>
+ .footer {
+height: 10;
+cellpadding: 10;
+font-family:'Playfair Display'; 
+width:100%; 
+background: #8CA5BA;
+padding: 0.5rem 1rem;
+font-size: 1.2em;
+color: #132C40;
+} 
+</style>
+  <div class="footer"; align="left";>&copy; Харламова Ю.С.</div>
+  </div> 
+
+</body>
+</body>
+</html>
